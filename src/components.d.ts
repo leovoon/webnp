@@ -4,15 +4,27 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BurgerModal: typeof import('./components/BurgerModal.vue')['default']
+    'Carbon:faceSatisfied': typeof import('~icons/carbon/face-satisfied')['default']
     CarbonCampsite: typeof import('~icons/carbon/campsite')['default']
+    CarbonClose: typeof import('~icons/carbon/close')['default']
     CarbonDicomOverlay: typeof import('~icons/carbon/dicom-overlay')['default']
+    CarbonFaceSatisfied: typeof import('~icons/carbon/face-satisfied')['default']
+    CarbonHome: typeof import('~icons/carbon/home')['default']
+    CarbonHouse: typeof import('~icons/carbon/house')['default']
     CarbonLanguage: typeof import('~icons/carbon/language')['default']
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
+    CarbonMenu: typeof import('~icons/carbon/menu')['default']
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
     CarbonPedestrian: typeof import('~icons/carbon/pedestrian')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
+    'CarbonUser-': typeof import('~icons/carbon/user-')['default']
+    CarbonUserFavorite: typeof import('~icons/carbon/user-favorite')['default']
     CarbonWarning: typeof import('~icons/carbon/warning')['default']
     Footer: typeof import('./components/Footer.vue')['default']
+    Logo: typeof import('./components/Logo.vue')['default']
+    Navbar: typeof import('./components/Navbar.vue')['default']
+    NavbarItem: typeof import('./components/NavbarItem.vue')['default']
     README: typeof import('./components/README.md')['default']
   }
 }

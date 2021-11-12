@@ -6,9 +6,10 @@ button:
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
 intro:
-  desc: 固执己见的 Vite 项目模板
-  dynamic-route: 动态路由演示
-  hi: 你好，{name}
-  aka: 也叫
-  whats-your-name: 输入你的名字
+  desc: 免费网站给予非盈利公司与慈善机构
+nav:
+  contact: 联系
+  cost: 成本
+  faqs: 常见问题
+  home: 主页
 not-found: 未找到页面

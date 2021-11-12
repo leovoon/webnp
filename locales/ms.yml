@@ -1,15 +1,15 @@
 button:
-  about: about 
-  back: back
+  about: Tentang
+  back: Kembali
   go: Go
   home: Home
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
-  desc: Free site for non-profits and charities
+  desc: free laman web bagi organisasi bukan untung/amal
 nav:
   contact: contact
-  cost: cost
+  cost: kos
   faqs: faqs
   home: home
-not-found: Not found
+not-found: Tak jumpa
