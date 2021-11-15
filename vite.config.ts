@@ -19,12 +19,12 @@ export default defineConfig({
   },
   plugins: [
     Vue({
-      include: [/\.vue$/, /\.md$/],
+      include: [/\.vue$/],
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
-      extensions: ['vue', 'md'],
+      extensions: ['vue'],
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -47,7 +47,7 @@ export default defineConfig({
       extensions: ['vue'],
 
       // allow auto import and register components used in markdown
-      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+      include: [/\.vue$/, /\.vue\?vue/],
 
       // custom resolvers
       resolvers: [
