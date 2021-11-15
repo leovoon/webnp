@@ -5,6 +5,12 @@ button:
   home: 首页
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
+contact:
+  title: 联系
+cost:
+  title: 预算
+faq:
+  title: 经常被问到的问题
 intro:
   desc: 免费网站给予非盈利公司与慈善机构
   getInTouch: 我要联系你们
@@ -27,7 +33,7 @@ intro:
   whyfreetitle: 为什么我们是免费的
 nav:
   contact: 联系
-  cost: 成本
+  cost: 预算
   faqs: 常见问题
   home: 主页
 not-found: 未找到页面

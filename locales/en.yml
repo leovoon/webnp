@@ -16,6 +16,12 @@ intro:
   getnow: Get free site now
   getInTouch: Get in touch
   getVol: I want to volunteer
+cost:
+  title: Cost
+faq:
+  title: Frequently Asked Question 
+contact:
+  title: Contact
 nav:
   contact: contact
   cost: cost

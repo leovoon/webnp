@@ -5,6 +5,12 @@ button:
   home: Home
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
+contact:
+  title: Hubungi
+cost:
+  title: Kos
+faq:
+  title: Soalan Lazim
 intro:
   desc: free laman web bagi organisasi bukan untung/amal
   getInTouch: Hubungi

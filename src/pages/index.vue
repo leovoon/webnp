@@ -5,7 +5,7 @@ const { t } = useI18n()
 
 <template>
   <figure class="mb-8">
-    <splash />
+    <home-splash />
     <em class="text-2xl opacity-75 block my-4 sm:text-4xl">{{ t('intro.desc') }}</em>
   </figure>
 

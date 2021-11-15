@@ -5,7 +5,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     BurgerModal: typeof import('./components/BurgerModal.vue')['default']
-    'Carbon:faceSatisfied': typeof import('~icons/carbon/face-satisfied')['default']
     CarbonCampsite: typeof import('~icons/carbon/campsite')['default']
     CarbonClose: typeof import('~icons/carbon/close')['default']
     CarbonDicomOverlay: typeof import('~icons/carbon/dicom-overlay')['default']
@@ -21,16 +20,19 @@ declare module 'vue' {
     CarbonQuery: typeof import('~icons/carbon/query')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
     CarbonTwoPersonLift: typeof import('~icons/carbon/two-person-lift')['default']
-    'CarbonUser-': typeof import('~icons/carbon/user-')['default']
     CarbonUserAdmin: typeof import('~icons/carbon/user-admin')['default']
     CarbonUserFavorite: typeof import('~icons/carbon/user-favorite')['default']
     CarbonWarning: typeof import('~icons/carbon/warning')['default']
+    CostSplash: typeof import('./components/CostSplash.vue')['default']
+    FaqSplash: typeof import('./components/FaqSplash.vue')['default']
+    FaqsSplash: typeof import('~icons/fa/qs-splash')['default']
     Footer: typeof import('./components/Footer.vue')['default']
+    HomeSplash: typeof import('./components/HomeSplash.vue')['default']
     Logo: typeof import('./components/Logo.vue')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
     NavbarItem: typeof import('./components/NavbarItem.vue')['default']
     README: typeof import('./components/README.md')['default']
-    Splash: typeof import('./components/Splash.vue')['default']
+    Splash: typeof import('./components/HomeSplash.vue')['default']
     WhatWeDo: typeof import('./components/WhatWeDo.vue')['default']
   }
 }
