@@ -113,7 +113,7 @@ const handleClose = () => isOpen.value = false
 <style scoped>
 
 nav {
-  @apply flex w-full items-center justify-between transition-colors ease-in  p-4 dark:(text-green-300)  fixed top-0 left-0;
+  @apply flex w-full z-1 items-center justify-between transition-colors ease-in  p-4 dark:(text-green-300)  fixed top-0 left-0;
 }
 nav ul{
 @apply hidden items-center space-x-8 sm:(text-xl flex)

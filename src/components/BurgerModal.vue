@@ -24,7 +24,7 @@ const emit = defineEmits(['closeModal'])
 
 <style scoped>
 nav {
-    @apply fixed inset-0 w-full h-screen
+    @apply fixed inset-0 w-full h-screen z-2
      bg-gray-300 opacity-90 dark:(bg-green-800 opacity-90 text-light-200 )
 }
 
