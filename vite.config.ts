@@ -7,13 +7,9 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import Markdown from 'vite-plugin-md'
 import WindiCSS from 'vite-plugin-windicss'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Inspect from 'vite-plugin-inspect'
-import LinkAttributes from 'markdown-it-link-attributes'
-
-const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 export default defineConfig({
   resolve: {
@@ -48,8 +44,7 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
-      // allow auto load markdown components under `./src/components/`
-      extensions: ['vue', 'md'],
+      extensions: ['vue'],
 
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
