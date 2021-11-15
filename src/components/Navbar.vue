@@ -1,7 +1,7 @@
 <template>
   <nav :class="{'bg-green-400 bg-opacity-95 dark:(bg-green-900 bg-opacity-95)' : isScrollDown}">
     <logo />
-    <ul v-show="!isMobile">
+    <ul>
       <li>
         <router-link to="/" :title="t('nav.home')">
           {{ t('nav.home') }}
@@ -71,7 +71,6 @@
 
 <script lang='ts' setup>
 import { isDark, toggleDark } from '~/composables'
-
 const { t, availableLocales, locale } = useI18n()
 
 const toggleLocales = () => {
@@ -117,7 +116,7 @@ nav {
   @apply flex w-full items-center justify-between transition-colors ease-in  p-4 dark:(text-green-300)  fixed top-0 left-0;
 }
 nav ul{
-@apply flex items-center space-x-8 sm:text-xl
+@apply hidden items-center space-x-8 sm:(text-xl flex)
 }
 
 nav ul li {
