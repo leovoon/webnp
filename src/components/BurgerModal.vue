@@ -6,11 +6,11 @@
           <carbon-close />
         </button>
       </div>
-      <ul class="flex flex-col items-center text-center ">
+      <ul>
         <slot></slot>
-        <div class="flex space-x-2 mt-4">
+        <li class="text-2xl flex space-x-4">
           <slot name="footer"></slot>
-        </div>
+        </li>
       </ul>
     </nav>
   </teleport>
@@ -24,7 +24,12 @@ const emit = defineEmits(['closeModal'])
 
 <style scoped>
 nav {
-    @apply absolute inset-0 w-full h-full bg-gray-300 opacity-90 dark:(bg-green-800 opacity-90 text-light-200 )
+    @apply fixed inset-0 w-full h-screen
+     bg-gray-300 opacity-90 dark:(bg-green-800 opacity-90 text-light-200 )
+}
+
+ul {
+@apply w-full py-6 h-full max-h-[80%] flex flex-col items-center justify-between text-center;
 }
 
 </style>

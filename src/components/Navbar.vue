@@ -1,5 +1,6 @@
 <template>
-  <nav>
+  <nav :class="{'bg-green-400 bg-opacity-95 dark:(bg-green-900 bg-opacity-95)' : isScrollDown}">
+    <logo />
     <ul v-show="!isMobile">
       <li>
         <router-link to="/" :title="t('nav.home')">
@@ -23,43 +24,48 @@
       </li>
     </ul>
 
-    <button :title="t('button.toggle_dark')" @click="toggleDark()">
-      <carbon-moon v-if="isDark" />
-      <carbon-sun v-else />
-    </button>
-
-    <button
-      :title="t('button.toggle_langs')"
-      @click="toggleLocales"
-    >
-      <carbon-language />
-    </button>
-    <button
-      v-show="isMobile"
-      :class="{'invisible': isOpen}"
-      @click.stop="openModal"
-    >
-      <carbon-menu />
-    </button>
-    <burger-modal :is-open="isOpen" @closeModal="handleClose">
-      <li v-for="({title, path},idx) in items" :key="idx" class="mobileMenu" @click="handleClose">
-        <router-link :to="path" :title="t(`nav.${title}`)">
-          {{ t(`nav.${title}`) }}
-        </router-link>
-      </li>
-      <template #footer>
-        <button
-          :title="t('button.toggle_langs')"
-          @click="toggleLocales"
-        >
-          <carbon-language />
-        </button>
-        <button :title="t('button.toggle_dark')" @click="toggleDark()">
-          <carbon-moon v-if="isDark" />
-          <carbon-sun v-else />
-        </button>
-      </template>
-    </burger-modal>
+    <div class="flex space-x-2">
+      <button :title="t('button.toggle_dark')" @click="toggleDark()">
+        <carbon-moon v-if="isDark" />
+        <carbon-sun v-else />
+      </button>
+      <button
+        :title="t('button.toggle_langs')"
+        @click="toggleLocales"
+      >
+        <carbon-language />
+      </button>
+      <button
+        v-show="isMobile"
+        :class="{'invisible': isOpen}"
+        @click.stop="openModal"
+      >
+        <carbon-menu />
+      </button>
+      <burger-modal :is-open="isOpen" @closeModal="handleClose">
+        <li v-for="({title, path},idx) in items" :key="idx" class="mobileMenu" @click="handleClose">
+          <router-link :to="path" :title="t(`nav.${title}`)">
+            {{ t(`nav.${title}`) }}
+          </router-link>
+        </li>
+        <template #footer>
+          <li>
+            <button
+              :title="t('button.toggle_langs')"
+              @click="toggleLocales"
+            >
+              <carbon-language />
+            </button>
+          </li>
+          <li>
+            <button :title="t('button.toggle_dark')" @click="toggleDark()">
+              <carbon-moon v-if="isDark" />
+              <carbon-sun v-else />
+            </button>
+          </li>
+        </template>
+      </burger-modal>
+    </div>
   </nav>
 </template>
 
@@ -97,7 +103,8 @@ const breakpoints = useBreakpoints({
   laptop: 1024,
   desktop: 1280,
 })
-
+const { y: windowScrollY } = useWindowScroll()
+const isScrollDown = computed(() => windowScrollY.value > 50)
 const isMobile = breakpoints.smaller('tablet')
 const isOpen = ref(false)
 const openModal = () => isOpen.value = true
@@ -105,21 +112,22 @@ const handleClose = () => isOpen.value = false
 </script>
 
 <style scoped>
-button {
-  @apply flex items-center cursor-pointer p-2 dark:text-green-200;
-}
+
 nav {
-  @apply flex items-center space-x-4 dark:text-green-300;
+  @apply flex w-full items-center justify-between transition-colors ease-in  p-4 dark:(text-green-300)  fixed top-0 left-0;
 }
 nav ul{
 @apply flex items-center space-x-8 sm:text-xl
 }
 
 nav ul li {
-  @apply p-2 hover:(ring-green-300 ring-0.8) dark:(hover:text-light-300);
+  @apply p-2 hover:(ring-green-300 ring-0.8)  dark:(hover:text-light-300);
 }
 
+button {
+  @apply flex items-center cursor-pointer p-2 dark:text-green-200;
+}
 li.mobileMenu {
-@apply px-4 py-2 text-xl hover:ring-2 ring-green-500 transition-all ease-out
+@apply px-4 py-2 text-2xl hover:(ring-2 text-green-600 cursor-pointer) ring-green-600 transition-all ease-out
 }
 </style>

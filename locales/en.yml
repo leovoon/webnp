@@ -7,6 +7,15 @@ button:
   toggle_langs: Change languages
 intro:
   desc: Free site for non-profits and charities
+  whyfreetitle: Why are we free
+  whyfree: We believe that all charities, non-profits, and nonprofits should have attractive and functional websites to benefit the people and communities they serve, as well as to raise funds and spread their message. The only issue is that websites may be quite costly! We're dedicated to building websites for free! We've already built websites for small businesses and have a couple more projects in the works!
+  whatwedotitle: What do we do?
+  whatwedo1: We wish to lend a hand to the organisations and non-profits that help so many people. To help the community, we create beautiful, SEO optimized, modernized and mobile friendly websites.
+  whatwedo2: We intend to expand our project to include emerging developers, designers, and marketers who require experience to kick start their careers in this industry or further develop their skills.
+  whatwedo3: If you're a tiny charity or non-profit without a website or one with an outdated design, get in contact. Our services are free. You'll only have to pay for the hosting of your website and any third-party items.
+  getnow: Get free site now
+  getInTouch: Get in touch
+  getVol: I want to volunteer
 nav:
   contact: contact
   cost: cost
