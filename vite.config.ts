@@ -68,9 +68,7 @@ export default defineConfig({
     }),
 
     // https://github.com/antfu/vite-plugin-windicss
-    WindiCSS({
-      safelist: markdownWrapperClasses,
-    }),
+    WindiCSS({}),
 
     // https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
     VueI18n({
