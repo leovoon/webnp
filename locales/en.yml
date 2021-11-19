@@ -1,27 +1,68 @@
 button:
-  about: about 
+  about: about
   back: back
   go: Go
   home: Home
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
-intro:
-  desc: Free site for non-profits and charities
-  whyfreetitle: Why are we free
-  whyfree: We believe that all charities, non-profits, and nonprofits should have attractive and functional websites to benefit the people and communities they serve, as well as to raise funds and spread their message. The only issue is that websites may be quite costly! We're dedicated to building websites for free! We've already built websites for small businesses and have a couple more projects in the works!
-  whatwedotitle: What do we do?
-  whatwedo1: We wish to lend a hand to the organisations and non-profits that help so many people. To help the community, we create beautiful, SEO optimized, modernized and mobile friendly websites.
-  whatwedo2: We intend to expand our project to include emerging developers, designers, and marketers who require experience to kick start their careers in this industry or further develop their skills.
-  whatwedo3: If you're a tiny charity or non-profit without a website or one with an outdated design, get in contact. Our services are free. You'll only have to pay for the hosting of your website and any third-party items.
-  getnow: Get free site now
-  getInTouch: Get in touch
-  getVol: I want to volunteer
-cost:
-  title: Cost
-faq:
-  title: Frequently Asked Question 
 contact:
   title: Contact
+cost:
+  cardCms: >-
+    If you want to have a dynamic website that you can edit, you'll need a
+    content management system (CMS). This gives you complete control over the
+    content. The design is always free...you only have to pay for CMS hosting.
+  cardCmsT: cms
+  cardCmsTag: RM 20^/month
+  cardFree: "We create the website and offer all of the files you'll need to host it yourself. Only photos or third-party products will require payment (we aren't made money, but we did manage to construct our website -\_ webnp for free!)"
+  cardFreeT: files
+  cardFreeTag: free
+  cardHost: >-
+    All you have to pay for is the hosting or custom domain name, which is
+    handled by third-party firms, which is ideal for smaller websites like
+    webnp. We'll set everything up for you and keep an eye on your site in the
+    future. Web hosting is available for as little as a few ringgits per month.
+  cardHostT: host
+  cardHostTag: RM 2/month
+  title: Cost
+  titleDesc: >-
+    Our websites will always be free. You'll just have to pay for third-party
+    items and paid web hosting. All you'll pay for are any third party products
+    and web hosting. We don't take a penny.
+  titleDesc2: >-
+    We've broken down how much you might anticipate to pay per month based on
+    your needs.
+  titleDesc2i: >-
+    All site hosting and hosting contracts will be set up in your name, and we
+    will never ask for your credit card information!
+faq:
+  title: Frequently Asked Question
+intro:
+  desc: Free site for non-profits and charities
+  getInTouch: Get in touch
+  getVol: I want to volunteer
+  getnow: Get free site now
+  whatwedo1: >-
+    We wish to lend a hand to the organisations and non-profits that help so
+    many people. To help the community, we create beautiful, SEO optimized,
+    modernized and mobile friendly websites.
+  whatwedo2: >-
+    We intend to expand our project to include emerging developers, designers,
+    and marketers who require experience to kick start their careers in this
+    industry or further develop their skills.
+  whatwedo3: >-
+    If you're a tiny charity or non-profit without a website or one with an
+    outdated design, get in contact. Our services are free. You'll only have to
+    pay for the hosting of your website and any third-party items.
+  whatwedotitle: What do we do?
+  whyfree: >-
+    We believe that all charities, non-profits, and nonprofits should have
+    attractive and functional websites to benefit the people and communities
+    they serve, as well as to raise funds and spread their message. The only
+    issue is that websites may be quite costly! We're dedicated to building
+    websites for free! We've already built websites for small businesses and
+    have a couple more projects in the works!
+  whyfreetitle: Why are we free
 nav:
   contact: contact
   cost: cost

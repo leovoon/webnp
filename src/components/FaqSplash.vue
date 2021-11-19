@@ -887,7 +887,7 @@
     </g>
     <g
       id="freepik--Graphics--inject-5"
-      class="animable"
+      class="animable dark:invisible"
       style="transform-origin: 331.85px 228.545px;"
     >
       <rect

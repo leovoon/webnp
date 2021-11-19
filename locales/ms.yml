@@ -8,7 +8,46 @@ button:
 contact:
   title: Hubungi
 cost:
+  cardCms: >-
+    Jika anda ingin mempunyai tapak web dinamik yang boleh anda edit, anda
+    memerlukan sistem pengurusan kandungan (CMS). 
+
+    Ini memberi anda kawalan sepenuhnya ke atas kandungan. 
+
+    Reka bentuk sentiasa percuma...anda hanya perlu membayar untuk hosting CMS.
+  cardCmsT: cms
+  cardCmsTag: RM 20^/bulan
+  cardFree: "Kami mencipta laman web dan menawarkan semua fail yang anda perlukan untuk mengehoskannya sendiri. \nHanya foto atau produk pihak ketiga yang memerlukan pembayaran (kami tidak mendapat untung. Kami mampu membina laman web kami -\_ webnp dengan percuma!)"
+  cardFreeT: file
+  cardFreeTag: percuma
+  cardHost: >-
+    Apa yang anda perlu bayar ialah pengehosan atau nama domain tersuai, yang
+    dikendalikan oleh firma pihak ketiga, yang sesuai untuk tapak web yang lebih
+    kecil seperti webnp. 
+
+    Kami akan menyediakan segala-galanya untuk anda dan memerhatikan tapak anda
+    pada masa hadapan. 
+
+    Pengehosan web boleh didapati dengan harga serendah beberapa ringgit
+    sebulan.
+  cardHostT: host
+  cardHostTag: RM 2/bulan
   title: Kos
+  titleDesc: >-
+    Laman web kami akan sentiasa percuma. 
+
+    Anda hanya perlu membayar untuk item pihak ketiga dan pengehosan web
+    berbayar. 
+
+    Anda hanya perlu membayar apa-apa produk pihak ketiga dan pengehosan web. 
+
+    Kami tidak mengambil sesen pun.
+  titleDesc2: >-
+    Kami telah membahagikan jumlah yang anda mungkin jangkakan untuk membayar
+    setiap bulan berdasarkan keperluan anda.
+  titleDesc2i: >-
+    Semua kontrak pengehosan dan pengehosan tapak akan disediakan atas nama
+    anda, dan kami tidak akan sekali-kali meminta maklumat kad kredit anda!
 faq:
   title: Soalan Lazim
 intro:

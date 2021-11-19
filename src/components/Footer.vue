@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class=" mb-4 space-x-8">
+    <div class=" my-6 space-x-8">
       <router-link to="#">
         Privacy Policy
       </router-link>

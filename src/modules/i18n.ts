@@ -1,4 +1,5 @@
 import { createI18n } from 'vue-i18n'
+import { usePreferredLanguages } from '@vueuse/core'
 import { UserModule } from '~/types'
 
 // Import i18n resources
@@ -15,9 +16,11 @@ const messages = Object.fromEntries(
 )
 
 export const install: UserModule = ({ app }) => {
+  const preferLangs = usePreferredLanguages()
+  const preferLang = preferLangs.value.includes('zh-CN') ? 'zh-CN' : preferLangs.value.includes('ms-MY') ? 'ms' : 'en'
   const i18n = createI18n({
     legacy: false,
-    locale: 'en',
+    locale: preferLang,
     messages,
   })
 
